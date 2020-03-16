@@ -1,0 +1,12 @@
+.i-item {
+    /* width: 580px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.ritem {
+    margin: 0;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    background-color: aqua;
+}
