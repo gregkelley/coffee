@@ -11,13 +11,23 @@ import 'tachyons';
 const Item = (props) => {
     return (
         <Fragment>
-            <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </DropdownButton>
+          <div className='i-item px-4'>
 
-            <div className='i-item px-4'>
+            <p className='ba f4 w-60  i-color'>{props.name}</p>
+
+            <DropdownButton id="dropdown-basic-button" 
+                className="px-4 w-20 btn-drop"
+                variant="Secondary"
+                title="Choose Grind">
+                <Dropdown.Item eventKey="1" active>Whole Bean</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Drip Grind</Dropdown.Item>
+                <Dropdown.Item eventKey="3">French Press</Dropdown.Item>
+                <Dropdown.Item eventKey="4">Espresso</Dropdown.Item>
+                <Dropdown.Item eventKey="5">See Notes</Dropdown.Item>
+            </DropdownButton>
+            {/* </div> */}
+
+            {/* <div className='i-item px-4'>
                 <p className='ba f4 w-60 bg-light-green'>{props.name}</p>
                 
                     <select value="choose grind" className="fl w-20">
@@ -26,9 +36,9 @@ const Item = (props) => {
                         <option value="french">French Press</option>
                         <option value="espresso">Espresso</option>
                         <option value="special">See Notes</option>
-                    </select>
+                    </select> */}
 
-                <p className='fl w-20 ba bg-light-green'>{props.quantity}</p>
+                <p className='fl w-20 ba i-color'>{props.quantity}</p>
             </div>
         </Fragment>
     );

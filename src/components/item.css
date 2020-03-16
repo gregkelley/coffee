@@ -10,3 +10,16 @@
     box-shadow: 0 2px 3px #ccc;
     background-color: aqua;
 }
+
+.i-color {
+    background-color: #4c6c7d; /* #46B6AC; */
+}
+
+.d-color {
+    color: #4c6c7d;
+    
+}
+
+.btn-drop {
+    color: black;
+}
